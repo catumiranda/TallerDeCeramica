@@ -16,6 +16,7 @@ a {
 
 #logo {
     text-align: center;
+    margin: 1em;
 }
 
 hr {
@@ -98,9 +99,7 @@ footer {
     font-weight: bold;
     width: 1000px;
     font-size: 1.4em;
-    margin: auto;
     text-align: center;
-
 }
 
 .destacado p {
@@ -154,6 +153,7 @@ footer ul li {
     display: flex;
     flex-direction: row-reverse;
     margin: 0em;
+    color: $acento-color !important;
 }
 
 .texto-home img {
@@ -196,7 +196,7 @@ footer ul li {
 }
 
 .producto-individual figure:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 
 .texto-productos {
@@ -268,74 +268,7 @@ footer ul li {
     margin: auto;
 }
 
-
-
-/* .destacado-taller {
-    text-align: start;
-    font-weight: bold;
-    width: 1000px;
-    font-size: 1.5em;
-} */
-
-/* .destacado-taller p {
-    font-family: 'Cormorant Garamond';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2em;
-    color: #001613;
-} */
-
-/* .destacado-taller strong {
-    font-family: 'Cormorant Garamond';
-    font-style: italic;
-    font-weight: 1000;
-} */
-
-/* .taller {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-} */
-
-/* .taller img {
-    max-width: 500px;
-} */
-
-/*Bloque de contenido en la página*/
-
-/* .contenido {
-    padding: 0px 30px 0px 30px;
-    margin: 0em;
-} */
-
-
-/* ul {
-    list-style-type: circle;
-} */
-
-/*Tablas*/
-
-/* .tabla {
-    background-color: #e7e9e8;
-    width: 500px;
-    color: #497764;
-    border: #066b5a solid;
-    padding: 10px;
-} */
-
-/* .como-comprar {
-    text-align: center;
-} */
-
-/*Imágenes*/
-
 .imagen-inicio img {
     width: 100%;
     text-align: center;
 }
-
-/*FAQ*/
-
-/* .faq {
-    width: auto;
-}   */
