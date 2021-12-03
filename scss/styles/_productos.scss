@@ -1,7 +1,7 @@
 /* Productos */
 
 .productos {
-    width: 1300px;
+    width: 1000px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -12,7 +12,7 @@
 .producto-individual {
     display: flex;
     flex-direction: column;
-    margin: 3em 0em 0em 0em;
+    margin: 1em;
 
     figure {
         transition: transform .2s; /* Animation */
@@ -38,4 +38,5 @@
         padding: 0.2em; 
     }
 }
+
 

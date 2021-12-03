@@ -93,37 +93,7 @@ footer {
     border-bottom: 2px solid aliceblue;
 }
 
-/* Destacados */
 
-.destacado {
-    font-weight: bold;
-    width: 1000px;
-    font-size: 1.4em;
-    margin: auto;
-    text-align: center;
-
-}
-
-.destacado p {
-    font-family: 'Cormorant Garamond';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2em;
-    color: #001613;
-}
-
-.destacado span {
-    font-family: 'Cormorant Garamond';
-    font-style: italic;
-    font-weight: 1000;
-}
-
-.destacado h2{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1em;
-}
 
 /* catgorías footer */
 

@@ -1,28 +1,20 @@
 /*Estilos generales*/
 
+/*Import*/
+@import "mixins";
+
 // Variables
 $acento-color: #098b76;
 $ancho: 400px;
 $destacado: 500px;
 
-@mixin bullets {
-    text-style: none;
-    color: $acento-color;
-}
 
 body {
     font-family: 'Montserrat', sans-serif;
-    /* background-color:#fffdfd; */
     font-size: 1em;
-    margin: 0em;
     background-color: #fffefe;
     height: auto;
     width: auto;
-}
-
-
-a:link {
-    @include bullets;
 }
 
 #logo {
@@ -30,9 +22,6 @@ a:link {
     margin: 1em;
 }
 
-hr {
-    width: 95%;
-}
 
 /*Grid*/
 
@@ -53,106 +42,54 @@ header {
 
 main {
     grid-area: main;
-    color: #131312;
 }
 
 footer {
     grid-area: footer;
-    
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    text-align: center;
-    color: #131312;
 }
 
 
 /* catgorías menu */
 
-.sticky {
-    position:sticky;
-    top:0px;
-}
+// .sticky {
+//     position:sticky;
+//     top:0px;
+// }
 
-.menu {
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
+// .menu {
+//     font-weight: bold;
+//     font-family: 'Montserrat', sans-serif;
+//     font-style: normal;
+//     font-weight: 500;
 
-    background-color: #098b76;
-    color: honeydew;
-    text-decoration: none;
-    height: 50px;
-    padding: 25px 0px 0px 15px;
-}
+//     background-color: #098b76;
+//     color: honeydew;
+//     text-decoration: none;
+//     height: 50px;
+//     padding: 25px 0px 0px 15px;
+// }
 
-.menu ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0px 200px 0px 200px;
-    text-align: center;
-    }
+// .menu ul {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     margin: 0px 200px 0px 200px;
+//     text-align: center;
+//     }
 
-.menu ul li {
-    list-style: none;
-    padding-bottom: 0.3em;
-}
+// .menu ul li {
+//     list-style: none;
+//     padding-bottom: 0.3em;
+// }
 
-.menu ul li:hover {
-    border-bottom: 2px solid aliceblue;
-}
+// .menu ul li:hover {
+//     border-bottom: 2px solid aliceblue;
+// }
 
 /* Destacados */
 
 .destacado {
-    font-weight: bold;
-    width: $destacado*2;
-    margin: auto;
-    font-size: 1.4em;
-    text-align: center;
-    display: flex;
-    align-items: center;
-  justify-content: center;
-}
-
-.destacado p {
-    font-family: 'Cormorant Garamond';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2em;
-    color: #001613;
-}
-
-.destacado span {
-    font-family: 'Cormorant Garamond';
-    font-style: italic;
-    font-weight: 1000;
-}
-
-.destacado h2{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1em;
-}
-
-/* catgorías footer */
-
-footer {
-    margin-top: 3em;
-}
-
- footer ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 20px 600px 50px 600px;
-}
-
-footer ul li {
-    display: inline-block;
+    @include destacado;
 }
 
 
@@ -163,8 +100,6 @@ footer ul li {
     flex-direction: column;
     justify-content: space-around;
 }
-
-
 
 .texto-home {
     display: flex;
@@ -193,9 +128,6 @@ footer ul li {
     font-size: 2em;
     font-weight: 800;
 }
-
-
-
 
 /*HTML El taller*/
 
@@ -258,19 +190,4 @@ footer ul li {
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
 
-    
-.grid {
-    display: grid;
-    grid-template-areas:
-    'header'
-    'main'
-    'footer';
-    grid-template-columns: 0.1fr;
-    grid-template-rows: 0.1fr ;
-    gap: 11px 0px;
-}
-    
-  
-}
