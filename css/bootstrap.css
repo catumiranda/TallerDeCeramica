@@ -7813,7 +7813,6 @@ textarea.form-control-lg {
 /*Estilos generales*/
 /*Import*/
 /* Destacados */
-/* Bullets */
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
@@ -7939,17 +7938,40 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  .como-comprar .destacado {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 3em;
+    text-align: center; }
+    .como-comprar .destacado p {
+      font-family: 'Cormorant Garamond';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 2em;
+      color: #001613; }
+    .como-comprar .destacado span {
+      font-family: 'Cormorant Garamond';
+      font-style: italic;
+      font-weight: 1000; }
+    .como-comprar .destacado h2, .como-comprar .destacado .h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1em; }
   .como-comprar h1, .como-comprar .h1 {
     text-align: center; }
+  .como-comprar div img {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5em;
+    margin-top: 1em; }
+  .como-comprar .pasos-comprar {
+    margin-top: 3px; }
   .como-comprar div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: auto; }
-
-.imagen-inicio img {
-  width: 100%;
-  text-align: center; }
 
 /* Productos */
 .productos {
@@ -7985,9 +8007,7 @@ footer {
     padding: 0.2em; }
 
 /* Destacados */
-/* Bullets */
 /* Destacados */
-/* Bullets */
 footer {
   width: auto;
   height: 100px;
@@ -8004,3 +8024,26 @@ footer {
     margin-top: 2em; }
   footer ul li {
     display: inline-block; }
+
+.faq {
+  width: 1000px;
+  height: 650px;
+  margin: auto;
+  background-color: #eaf3ee;
+  border-radius: 5px; }
+  .faq ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center; }
+  .faq ul div {
+    padding: 2em 0em 2em 0em;
+    border-bottom: solid #055c4d 2px;
+    width: 900px; }
+  .faq ul div li {
+    padding: 1em 0em 1em 0em; }
+
+.sep-faq {
+  width: 800px;
+  color: #033838; }

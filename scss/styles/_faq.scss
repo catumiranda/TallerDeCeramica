@@ -2,17 +2,34 @@
 
 .faq {
     width: 1000px;
+    height: 650px;
     margin: auto;
-
+    background-color: #eaf3ee;
+    border-radius: 5px;
+    
     ul {
         list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+       
+
     }
 
     ul div {
         padding: 2em 0em 2em 0em;
+        border-bottom: solid #055c4d 2px;
+        width: 900px;
     }
 
     ul div li {
         padding: 1em 0em 1em 0em;
     }
+
+}
+
+.sep-faq {
+    width: 800px;
+    color: #033838;
 }
