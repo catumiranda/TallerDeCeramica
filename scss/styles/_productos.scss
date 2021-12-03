@@ -1,0 +1,41 @@
+/* Productos */
+
+.productos {
+    width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.producto-individual {
+    display: flex;
+    flex-direction: column;
+    margin: 3em 0em 0em 0em;
+
+    figure {
+        transition: transform .2s; /* Animation */
+    }
+}
+
+.producto-individual figure:hover {
+    transform: scale(1.1);
+}
+
+.texto-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    border-radius: 5px;
+    width: $ancho/2;
+    background-color: #098b76;
+    color: aliceblue;
+
+    p {
+        margin: auto;
+        padding: 0.2em; 
+    }
+}
+
