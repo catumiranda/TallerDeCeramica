@@ -5,8 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-// Main CSS
-@import "main";
+
 
 // scss-docs-start import-stack
 // Configuration
@@ -55,6 +54,6 @@
 @import "utilities/api";
 // scss-docs-end import-stack
 
-// Utilities
-$acento-color: #098b76;
+// Main CSS
+@import "main";
 

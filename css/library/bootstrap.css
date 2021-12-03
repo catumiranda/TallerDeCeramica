@@ -12,10 +12,12 @@ body {
   font-size: 1em;
   margin: 0em;
   background-color: #fffefe;
-  height: auto; }
+  height: auto;
+  width: auto; }
 
-a {
-  text-decoration: none; }
+a:link {
+  text-style: none;
+  color: #098b76; }
 
 #logo {
   text-align: center;
@@ -27,7 +29,9 @@ hr {
 /*Grid*/
 .grid {
   display: grid;
-  grid-template-areas: 'header' 'main' 'footer';
+  grid-template-areas: 'header'
+ 'main'
+ 'footer';
   grid-template-columns: 1fr;
   grid-template-rows: 0.1fr 1fr 0.1fr;
   gap: 11px 0px; }
@@ -81,8 +85,12 @@ footer {
 .destacado {
   font-weight: bold;
   width: 1000px;
+  margin: auto;
   font-size: 1.4em;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .destacado p {
   font-family: 'Cormorant Garamond';
@@ -125,6 +133,8 @@ footer ul li {
   display: flex;
   flex-direction: row-reverse;
   margin: 0em; }
+  .texto-home span {
+    color: #098b76; }
 
 .texto-home img {
   height: 100%;
@@ -159,14 +169,14 @@ footer ul li {
   /* Animation */ }
 
 .producto-individual figure:hover {
-  transform: scale(1.5); }
+  transform: scale(1.1); }
 
 .texto-productos {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  border: 1px solid #292828;
+  border-radius: 5px;
   width: 200px;
   background-color: #098b76;
   color: aliceblue; }
@@ -215,60 +225,20 @@ footer ul li {
   justify-content: center;
   margin: auto; }
 
-/* .destacado-taller {
-    text-align: start;
-    font-weight: bold;
-    width: 1000px;
-    font-size: 1.5em;
-} */
-/* .destacado-taller p {
-    font-family: 'Cormorant Garamond';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2em;
-    color: #001613;
-} */
-/* .destacado-taller strong {
-    font-family: 'Cormorant Garamond';
-    font-style: italic;
-    font-weight: 1000;
-} */
-/* .taller {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-} */
-/* .taller img {
-    max-width: 500px;
-} */
-/*Bloque de contenido en la página*/
-/* .contenido {
-    padding: 0px 30px 0px 30px;
-    margin: 0em;
-} */
-/* ul {
-    list-style-type: circle;
-} */
-/*Tablas*/
-/* .tabla {
-    background-color: #e7e9e8;
-    width: 500px;
-    color: #497764;
-    border: #066b5a solid;
-    padding: 10px;
-} */
-/* .como-comprar {
-    text-align: center;
-} */
-/*Imágenes*/
 .imagen-inicio img {
   width: 100%;
   text-align: center; }
 
-/*FAQ*/
-/* .faq {
-    width: auto;
-}   */
+@media screen and (max-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-areas: 'header'
+ 'main'
+ 'footer';
+    grid-template-columns: 0.1fr;
+    grid-template-rows: 0.1fr;
+    gap: 11px 0px; } }
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;

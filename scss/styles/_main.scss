@@ -1,5 +1,15 @@
 /*Estilos generales*/
 
+// Variables
+$acento-color: #098b76;
+$ancho: 400px;
+$destacado: 500px;
+
+@mixin bullets {
+    text-style: none;
+    color: $acento-color;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     /* background-color:#fffdfd; */
@@ -7,12 +17,13 @@ body {
     margin: 0em;
     background-color: #fffefe;
     height: auto;
+    width: auto;
 }
 
-a {
-    text-decoration: none;
-}
 
+a:link {
+    @include bullets;
+}
 
 #logo {
     text-align: center;
@@ -97,9 +108,13 @@ footer {
 
 .destacado {
     font-weight: bold;
-    width: 1000px;
+    width: $destacado*2;
+    margin: auto;
     font-size: 1.4em;
     text-align: center;
+    display: flex;
+    align-items: center;
+  justify-content: center;
 }
 
 .destacado p {
@@ -149,11 +164,16 @@ footer ul li {
     justify-content: space-around;
 }
 
+
+
 .texto-home {
     display: flex;
     flex-direction: row-reverse;
     margin: 0em;
-    color: $acento-color !important;
+
+    span {
+        color: $acento-color;
+    }
 }
 
 .texto-home img {
@@ -204,8 +224,8 @@ footer ul li {
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    border: 1px solid #292828;
-    width: 200px;
+    border-radius: 5px;
+    width: $ancho/2;
     background-color: #098b76;
     color: aliceblue;
 }
@@ -271,4 +291,21 @@ footer ul li {
 .imagen-inicio img {
     width: 100%;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    
+.grid {
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+    grid-template-columns: 0.1fr;
+    grid-template-rows: 0.1fr ;
+    gap: 11px 0px;
+}
+    
+  
 }
