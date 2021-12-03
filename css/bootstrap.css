@@ -7817,13 +7817,23 @@ textarea.form-control-lg {
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
-  background-color: #fffefe;
-  height: auto;
-  width: auto; }
+  background-color: #fffefe; }
 
 #logo {
   text-align: center;
   margin: 1em; }
+
+a:link {
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+a:active {
+  text-decoration: none; }
 
 /*Grid*/
 .grid {
@@ -7874,13 +7884,12 @@ footer {
 .texto-home {
   display: flex;
   flex-direction: row-reverse;
-  margin: 0em; }
+  margin-bottom: 2em; }
   .texto-home span {
     color: #098b76; }
-
-.texto-home img {
-  height: 100%;
-  width: 100%; }
+  .texto-home img {
+    height: 100%;
+    width: 100%; }
 
 .texto-piezas {
   width: 600px; }
@@ -7924,34 +7933,19 @@ footer {
     font-weight: 600;
     font-size: 1em; }
 
-.faq {
-  width: 1200px;
-  margin: auto; }
-
-.faq ul {
-  list-style: none; }
-
-.faq ul div {
-  padding: 2em 0em 2em 0em; }
-
-.faq ul div li {
-  padding: 1em 0em 1em 0em; }
-
 /*Como comprar*/
-.como-comprar h1, .como-comprar .h1 {
-  text-align: center; }
-
 .como-comprar {
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center; }
-
-.como-comprar div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: auto; }
+  .como-comprar h1, .como-comprar .h1 {
+    text-align: center; }
+  .como-comprar div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto; }
 
 .imagen-inicio img {
   width: 100%;
@@ -7995,18 +7989,18 @@ footer {
 /* Destacados */
 /* Bullets */
 footer {
-  margin-top: 3em;
-  background-color: #edf1f1;
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  text-align: center;
-  color: #131312; }
-
-footer ul {
+  width: auto;
+  height: 100px;
+  background-color: #f3f3f3;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
-
-footer ul li {
-  display: inline-block; }
+  justify-content: center;
+  align-content: center; }
+  footer ul {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    margin-top: 2em; }
+  footer ul li {
+    display: inline-block; }

@@ -13,14 +13,23 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     background-color: #fffefe;
-    height: auto;
-    width: auto;
 }
 
 #logo {
     text-align: center;
     margin: 1em;
 }
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
 
 
 /*Grid*/
@@ -104,16 +113,16 @@ footer {
 .texto-home {
     display: flex;
     flex-direction: row-reverse;
-    margin: 0em;
+    margin-bottom: 2em;
 
     span {
         color: $acento-color;
     }
-}
 
-.texto-home img {
-    height: 100%;
-    width: 100%;
+    img {
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .texto-piezas {
@@ -128,6 +137,7 @@ footer {
     font-size: 2em;
     font-weight: 800;
 }
+
 
 /*HTML El taller*/
 
@@ -148,41 +158,25 @@ footer {
     @include destacado;
 }
 
-.faq {
-    width: 1200px;
-    margin: auto;
-}
-
-.faq ul {
-    list-style: none;
-}
-
-.faq ul div {
-    padding: 2em 0em 2em 0em;
-}
-
-.faq ul div li {
-    padding: 1em 0em 1em 0em;
-}
-
 /*Como comprar*/
 
-.como-comprar h1 {
-    text-align: center;
-}
-
 .como-comprar {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
-.como-comprar div {
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto;
+
+    h1 {
+        text-align: center;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
 }
 
 .imagen-inicio img {
