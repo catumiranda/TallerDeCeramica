@@ -193,6 +193,22 @@ footer {
         justify-content: center;
         margin: auto;
     }
+    
+}
+
+@media screen and (max-width: 1080px) {
+
+    .texto-home figure img{
+        display:none;
+      }
+
+    .preguntas-home {
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+    }
 }
 
 
