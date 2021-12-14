@@ -167,7 +167,7 @@ footer {
     flex-direction: column;
     justify-content: center;
 
-    .destacado {
+    div .destacado {
         @include destacado;
     }
 
@@ -187,7 +187,8 @@ footer {
     }
     
 
-    div {
+    .pasos {
+        background-color: #eaf3ee;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -208,6 +209,16 @@ footer {
         justify-content: center;
         align-content: center;
         margin: auto;
+    }
+
+    .pasos {
+        padding: 2em;
+        margin: 1em;
+        border-radius: 5px;
+    }
+
+    .preguntas-home {
+        width: auto;
     }
 }
 

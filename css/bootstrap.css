@@ -7813,6 +7813,10 @@ textarea.form-control-lg {
 /*Estilos generales*/
 /*Import*/
 /* Destacados */
+@media screen and (max-width: 1080px) {
+  .destacado {
+    font-size: 1em; } }
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
@@ -7938,22 +7942,22 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  .como-comprar .destacado {
+  .como-comprar div .destacado {
     font-weight: bold;
     font-size: 1.3em;
     margin: 3em;
     text-align: center; }
-    .como-comprar .destacado p {
+    .como-comprar div .destacado p {
       font-family: 'Cormorant Garamond';
       font-style: normal;
       font-weight: 500;
       font-size: 2em;
       color: #001613; }
-    .como-comprar .destacado span {
+    .como-comprar div .destacado span {
       font-family: 'Cormorant Garamond';
       font-style: italic;
       font-weight: 1000; }
-    .como-comprar .destacado h2, .como-comprar .destacado .h2 {
+    .como-comprar div .destacado h2, .como-comprar div .destacado .h2 {
       font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 600;
@@ -7967,7 +7971,8 @@ footer {
     margin-top: 1em; }
   .como-comprar .pasos-comprar {
     margin-top: 3px; }
-  .como-comprar div {
+  .como-comprar .pasos {
+    background-color: #eaf3ee;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7980,7 +7985,13 @@ footer {
     display: flex;
     justify-content: center;
     align-content: center;
-    margin: auto; } }
+    margin: auto; }
+  .pasos {
+    padding: 2em;
+    margin: 1em;
+    border-radius: 5px; }
+  .preguntas-home {
+    width: auto; } }
 
 /* Productos */
 .productos {
@@ -8015,8 +8026,24 @@ footer {
     margin: auto;
     padding: 0.2em; }
 
+@media screen and (max-width: 1080px) {
+  .productos {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
 /* Destacados */
+@media screen and (max-width: 1080px) {
+  .destacado {
+    font-size: 1em; } }
+
 /* Destacados */
+@media screen and (max-width: 1080px) {
+  .destacado {
+    font-size: 1em; } }
+
 footer {
   width: auto;
   height: 100px;
@@ -8056,3 +8083,21 @@ footer {
 .sep-faq {
   width: 800px;
   color: #033838; }
+
+@media screen and (max-width: 1080px) {
+  .faq {
+    width: auto;
+    height: auto;
+    margin: 1em; }
+    .faq ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin-right: 1.6em; }
+      .faq ul div {
+        width: auto;
+        height: auto; }
+        .faq ul div li {
+          padding: 1em 0em 1em 0em; } }
