@@ -4,9 +4,13 @@
 @import "mixins";
 
 // Variables
-$acento-color: #098b76;
+$acento-color: #6cc29e;
 $ancho: 400px;
 $destacado: 500px;
+
+// Modificaciones de bootstrap
+
+$success: $acento-color;
 
 
 body {
@@ -18,6 +22,7 @@ body {
 #logo {
     text-align: center;
     margin: 1em;
+    margin-top: 5em;
 }
 
 a:link { text-decoration: none; }
@@ -57,43 +62,19 @@ footer {
     grid-area: footer;
 }
 
+/* Navbar */
 
-/* catgorías menu */
+.navbar {
+    background-color: $acento-color !important;
+}
 
-// .sticky {
-//     position:sticky;
-//     top:0px;
-// }
+.navbar-toggler {
+    background-color: $acento-color;
+}
 
-// .menu {
-//     font-weight: bold;
-//     font-family: 'Montserrat', sans-serif;
-//     font-style: normal;
-//     font-weight: 500;
-
-//     background-color: #098b76;
-//     color: honeydew;
-//     text-decoration: none;
-//     height: 50px;
-//     padding: 25px 0px 0px 15px;
-// }
-
-// .menu ul {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-//     margin: 0px 200px 0px 200px;
-//     text-align: center;
-//     }
-
-// .menu ul li {
-//     list-style: none;
-//     padding-bottom: 0.3em;
-// }
-
-// .menu ul li:hover {
-//     border-bottom: 2px solid aliceblue;
-// }
+.offcanvas {
+    background-color: #e6f0eb;
+}
 
 /* Destacados */
 
@@ -208,6 +189,10 @@ footer {
         justify-content: center;
         align-content: center;
         margin: auto;
+    }
+
+    .navbar {
+        width: auto;
     }
 }
 

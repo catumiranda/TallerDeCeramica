@@ -40,3 +40,13 @@
 }
 
 
+@media screen and (max-width: 1080px) {
+
+   .productos {
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+       width: auto;
+   } 
+}
+

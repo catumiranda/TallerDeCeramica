@@ -4,7 +4,7 @@
 
     font-weight: bold;
     font-size: 1.3em;
-    margin: 3em;
+    margin: 1em 3em 3em 3em;
     text-align: center;
     
 
@@ -30,6 +30,13 @@
     }
 }
 
+@media screen and (max-width: 1080px) {
+
+    .destacado {
+
+        font-size: 0.8em;
+    }
+}
 
 
 
