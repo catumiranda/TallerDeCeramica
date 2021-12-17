@@ -7844,8 +7844,7 @@ a:active {
   display: grid;
   grid-template-areas: 'header' 'main' 'footer';
   grid-template-columns: 1fr;
-  grid-template-rows: 0.1fr 1fr 0.1fr;
-  gap: 11px 0px; }
+  grid-template-rows: auto 1fr auto; }
 
 header {
   grid-area: header; }
@@ -7887,32 +7886,6 @@ footer {
     font-style: normal;
     font-weight: 600;
     font-size: 1em; }
-
-/* Inicio */
-.preguntas-home {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
-
-.texto-home {
-  display: flex;
-  flex-direction: row-reverse;
-  margin-bottom: 2em; }
-  .texto-home span {
-    color: #6cc29e; }
-  .texto-home img {
-    height: 100%;
-    width: 100%; }
-
-.texto-piezas {
-  width: 600px; }
-
-.texto-piezas span {
-  width: 500px;
-  font-family: 'Cormorant Garamond';
-  font-style: italic;
-  font-size: 2em;
-  font-weight: 800; }
 
 /*HTML El taller*/
 .taller {
@@ -7997,13 +7970,6 @@ footer {
     text-align: center; }
 
 @media screen and (max-width: 1080px) {
-  .texto-home figure img {
-    display: none; }
-  .preguntas-home {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: auto; }
   .navbar {
     width: auto; } }
 
@@ -8098,3 +8064,38 @@ footer {
 .sep-faq {
   width: 800px;
   color: #033838; }
+
+/* Inicio */
+.preguntas-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.texto-home {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 2em; }
+  .texto-home span {
+    color: #6cc29e; }
+  .texto-home img {
+    height: 100%;
+    width: 100%; }
+
+.texto-piezas {
+  width: 600px; }
+
+.texto-piezas span {
+  width: 500px;
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-size: 2em;
+  font-weight: 800; }
+
+@media screen and (max-width: 1080px) {
+  .texto-home figure img {
+    display: none; }
+  .preguntas-home {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto; } }
