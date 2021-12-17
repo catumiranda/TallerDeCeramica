@@ -7897,78 +7897,6 @@ footer {
   width: 1000px;
   align-content: center; }
 
-/* Destacados */
-.destacado {
-  font-weight: bold;
-  font-size: 1.3em;
-  margin: 1em 7em 3em 7em;
-  text-align: center; }
-  .destacado p {
-    font-family: 'Cormorant Garamond';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2em;
-    color: #001613; }
-  .destacado span {
-    font-family: 'Cormorant Garamond';
-    font-style: italic;
-    font-weight: 1000; }
-  .destacado h2, .destacado .h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1em; }
-
-/*Como comprar*/
-.como-comprar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center; }
-  .como-comprar h2, .como-comprar .h2 {
-    padding: 2em;
-    align-content: center; }
-  .como-comprar section {
-    width: 1000px;
-    margin: auto;
-    margin-bottom: 4em;
-    border-radius: 5px;
-    background-color: #f6f8f7; }
-    .como-comprar section :first-child {
-      border-top: solid #6cc29e; }
-    .como-comprar section div {
-      padding: 2em 5em 1em 5em;
-      border-bottom: solid #6cc29e;
-      display: flex;
-      flex-direction: row; }
-      .como-comprar section div ul {
-        padding: 0em 5em 0em 7em; }
-      .como-comprar section div span {
-        border-style: hidden;
-        padding-right: 1em; }
-  .como-comprar .destacado {
-    font-weight: bold;
-    font-size: 1.3em;
-    margin: 1em 7em 3em 7em;
-    text-align: center; }
-    .como-comprar .destacado p {
-      font-family: 'Cormorant Garamond';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 2em;
-      color: #001613; }
-    .como-comprar .destacado span {
-      font-family: 'Cormorant Garamond';
-      font-style: italic;
-      font-weight: 1000; }
-    .como-comprar .destacado h2, .como-comprar .destacado .h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 1em; }
-  .como-comprar h1, .como-comprar .h1 {
-    text-align: center; }
-
 @media screen and (max-width: 1080px) {
   .navbar {
     width: auto; } }
@@ -8065,6 +7993,22 @@ footer {
   width: 800px;
   color: #033838; }
 
+@media screen and (max-width: 1080px) {
+  .faq {
+    width: auto;
+    height: auto;
+    margin-left: 1em;
+    margin-right: 1em; }
+    .faq ul {
+      width: auto;
+      padding: 0em 1.5em; }
+      .faq ul div {
+        width: auto; }
+        .faq ul div li {
+          padding-bottom: 1em; }
+  .sep-faq {
+    width: auto; } }
+
 /* Inicio */
 .preguntas-home {
   display: flex;
@@ -8096,9 +8040,78 @@ footer {
     width: auto; }
   .texto-home figure img {
     display: none; }
+  .texto-home {
+    width: auto; }
   .preguntas-home {
-    display: none; }
+    width: auto;
+    padding-left: 1.5em;
+    padding-right: 1.5em; }
+  .texto-piezas {
+    width: auto;
+    font-size: 1em; }
+    .texto-piezas span {
+      font-size: 1.7em; }
+    .texto-piezas p {
+      font-size: 1.5em; }
   .carousel {
     width: auto; }
   footer div {
-    width: auto; } }
+    width: auto; }
+  .destacado {
+    margin-bottom: 0em; } }
+
+/*Como comprar*/
+.como-comprar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; }
+  .como-comprar h2, .como-comprar .h2 {
+    padding: 2em;
+    align-content: center; }
+  .como-comprar section {
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 4em;
+    border-radius: 5px;
+    background-color: #f6f8f7; }
+    .como-comprar section :first-child {
+      border-top: solid #6cc29e; }
+    .como-comprar section div {
+      padding: 2em 5em 1em 5em;
+      border-bottom: solid #6cc29e;
+      display: flex;
+      flex-direction: row; }
+      .como-comprar section div ul {
+        padding: 0em 5em 0em 7em; }
+      .como-comprar section div span {
+        border-style: hidden;
+        padding-right: 1em; }
+  .como-comprar .destacado {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 1em 7em 3em 7em;
+    text-align: center; }
+    .como-comprar .destacado p {
+      font-family: 'Cormorant Garamond';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 2em;
+      color: #001613; }
+    .como-comprar .destacado span {
+      font-family: 'Cormorant Garamond';
+      font-style: italic;
+      font-weight: 1000; }
+    .como-comprar .destacado h2, .como-comprar .destacado .h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1em; }
+  .como-comprar h1, .como-comprar .h1 {
+    text-align: center; }
+
+@media screen and (max-width: 1080px) {
+  .como-comprar section {
+    width: auto; }
+    .como-comprar section div {
+      width: auto; } }

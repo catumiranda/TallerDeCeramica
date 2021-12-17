@@ -1,0 +1,64 @@
+/*Como comprar*/
+
+.como-comprar {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    h2 {
+        padding: 2em;
+        align-content: center;
+    }
+
+    section {
+        width: 1000px;
+        margin: auto;
+        margin-bottom: 4em;
+        border-radius: 5px;
+        background-color: #f6f8f7;
+
+        :first-child  {
+            border-top: solid #6cc29e;
+        }
+
+        div {
+            padding: 2em 5em 1em 5em;
+            border-bottom: solid #6cc29e;
+            display: flex;
+            flex-direction: row;
+
+            ul {
+                padding: 0em 5em 0em 7em;
+            }
+
+            span {
+                border-style: hidden;
+                padding-right: 1em;
+            }
+        }
+        
+    }
+
+    .destacado {
+        @include destacado;
+    }
+
+    h1 {
+        text-align: center;
+    }      
+    
+}
+
+@media screen and (max-width: 1080px) {
+
+    .como-comprar section {
+        width: auto;
+
+        div {
+            width: auto;
+        }
+    }
+
+}

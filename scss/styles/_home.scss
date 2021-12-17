@@ -44,16 +44,39 @@
         display:none;
       }
 
-    .preguntas-home {
-
-        display: none;
+    .texto-home {
+        width: auto;
     }
 
+    .preguntas-home {
+
+        width: auto;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+
+    .texto-piezas {
+        width: auto;
+        font-size: 1em;
+
+        span {
+            font-size: 1.7em;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+    }
+    
     .carousel {
         width: auto;
     }
 
     footer div {
         width: auto;
+    }
+
+    .destacado {
+        margin-bottom: 0em;
     }
 }

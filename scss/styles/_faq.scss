@@ -13,8 +13,6 @@
         flex-direction: column;
         justify-content: center;
         align-content: center;
-       
-
     }
 
     ul div {
@@ -32,4 +30,32 @@
 .sep-faq {
     width: 800px;
     color: #033838;
+}
+
+@media screen and (max-width: 1080px) {
+
+    .faq {
+        width: auto;
+        height: auto;
+        margin-left: 1em;
+        margin-right: 1em;
+
+        ul {
+            width: auto;
+            padding: 0em 1.5em;
+
+            div {
+                width: auto;
+
+                li {
+                    padding-bottom: 1em;
+                }
+                
+            }
+        }
+    }
+
+    .sep-faq {
+        width: auto;
+    }
 }
