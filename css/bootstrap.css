@@ -7814,7 +7814,8 @@ textarea.form-control-lg {
 /* Destacados */
 @media screen and (max-width: 1080px) {
   .destacado {
-    font-size: 0.8em; } }
+    font-size: 0.8em;
+    margin: 0em 3em 3em 3em; } }
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -7869,7 +7870,7 @@ footer {
 .destacado {
   font-weight: bold;
   font-size: 1.3em;
-  margin: 1em 3em 3em 3em;
+  margin: 1em 7em 3em 7em;
   text-align: center; }
   .destacado p {
     font-family: 'Cormorant Garamond';
@@ -7927,7 +7928,7 @@ footer {
 .destacado {
   font-weight: bold;
   font-size: 1.3em;
-  margin: 1em 3em 3em 3em;
+  margin: 1em 7em 3em 7em;
   text-align: center; }
   .destacado p {
     font-family: 'Cormorant Garamond';
@@ -7947,14 +7948,35 @@ footer {
 
 /*Como comprar*/
 .como-comprar {
-  margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  align-content: center; }
+  .como-comprar h2, .como-comprar .h2 {
+    padding: 2em;
+    align-content: center; }
+  .como-comprar section {
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 4em;
+    border-radius: 5px;
+    background-color: #f6f8f7; }
+    .como-comprar section :first-child {
+      border-top: solid #6cc29e; }
+    .como-comprar section div {
+      padding: 2em 5em 1em 5em;
+      border-bottom: solid #6cc29e;
+      display: flex;
+      flex-direction: row; }
+      .como-comprar section div ul {
+        padding: 0em 5em 0em 7em; }
+      .como-comprar section div span {
+        border-style: hidden;
+        padding-right: 1em; }
   .como-comprar .destacado {
     font-weight: bold;
     font-size: 1.3em;
-    margin: 1em 3em 3em 3em;
+    margin: 1em 7em 3em 7em;
     text-align: center; }
     .como-comprar .destacado p {
       font-family: 'Cormorant Garamond';
@@ -7973,18 +7995,6 @@ footer {
       font-size: 1em; }
   .como-comprar h1, .como-comprar .h1 {
     text-align: center; }
-  .como-comprar div img {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 5em;
-    margin-top: 1em; }
-  .como-comprar .pasos-comprar {
-    margin-top: 3px; }
-  .como-comprar div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto; }
 
 @media screen and (max-width: 1080px) {
   .texto-home figure img {
@@ -8040,12 +8050,14 @@ footer {
 /* Destacados */
 @media screen and (max-width: 1080px) {
   .destacado {
-    font-size: 0.8em; } }
+    font-size: 0.8em;
+    margin: 0em 3em 3em 3em; } }
 
 /* Destacados */
 @media screen and (max-width: 1080px) {
   .destacado {
-    font-size: 0.8em; } }
+    font-size: 0.8em;
+    margin: 0em 3em 3em 3em; } }
 
 footer {
   width: auto;
