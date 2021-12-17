@@ -8092,10 +8092,13 @@ footer {
   font-weight: 800; }
 
 @media screen and (max-width: 1080px) {
+  body {
+    width: auto; }
   .texto-home figure img {
     display: none; }
   .preguntas-home {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: auto; } }
+    display: none; }
+  .carousel {
+    width: auto; }
+  footer div {
+    width: auto; } }
