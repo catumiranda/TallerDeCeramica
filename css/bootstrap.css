@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -7815,7 +7814,8 @@ textarea.form-control-lg {
 /* Destacados */
 @media screen and (max-width: 1080px) {
   .destacado {
-    font-size: 1em; } }
+    font-size: 0.8em;
+    margin: 0em 3em 3em 3em; } }
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -7824,7 +7824,8 @@ body {
 
 #logo {
   text-align: center;
-  margin: 1em; }
+  margin: 1em;
+  margin-top: 5em; }
 
 a:link {
   text-decoration: none; }
@@ -7841,10 +7842,11 @@ a:active {
 /*Grid*/
 .grid {
   display: grid;
-  grid-template-areas: 'header' 'main' 'footer';
+  grid-template-areas: 'header'
+ 'main'
+ 'footer';
   grid-template-columns: 1fr;
-  grid-template-rows: 0.1fr 1fr 0.1fr;
-  gap: 11px 0px; }
+  grid-template-rows: auto 1fr auto; }
 
 header {
   grid-area: header; }
@@ -7855,12 +7857,21 @@ main {
 footer {
   grid-area: footer; }
 
-/* catgorías menu */
+/* Navbar */
+.navbar {
+  background-color: #6cc29e !important; }
+
+.navbar-toggler {
+  background-color: #6cc29e; }
+
+.offcanvas {
+  background-color: #e6f0eb; }
+
 /* Destacados */
 .destacado {
   font-weight: bold;
   font-size: 1.3em;
-  margin: 3em;
+  margin: 1em 7em 3em 7em;
   text-align: center; }
   .destacado p {
     font-family: 'Cormorant Garamond';
@@ -7877,32 +7888,6 @@ footer {
     font-style: normal;
     font-weight: 600;
     font-size: 1em; }
-
-/* Inicio */
-.preguntas-home {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
-
-.texto-home {
-  display: flex;
-  flex-direction: row-reverse;
-  margin-bottom: 2em; }
-  .texto-home span {
-    color: #098b76; }
-  .texto-home img {
-    height: 100%;
-    width: 100%; }
-
-.texto-piezas {
-  width: 600px; }
-
-.texto-piezas span {
-  width: 500px;
-  font-family: 'Cormorant Garamond';
-  font-style: italic;
-  font-size: 2em;
-  font-weight: 800; }
 
 /*HTML El taller*/
 .taller {
@@ -7914,83 +7899,8 @@ footer {
   width: 1000px;
   align-content: center; }
 
-/* Destacados */
-.destacado {
-  font-weight: bold;
-  font-size: 1.3em;
-  margin: 3em;
-  text-align: center; }
-  .destacado p {
-    font-family: 'Cormorant Garamond';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2em;
-    color: #001613; }
-  .destacado span {
-    font-family: 'Cormorant Garamond';
-    font-style: italic;
-    font-weight: 1000; }
-  .destacado h2, .destacado .h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1em; }
-
-/*Como comprar*/
-.como-comprar {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  .como-comprar div .destacado {
-    font-weight: bold;
-    font-size: 1.3em;
-    margin: 3em;
-    text-align: center; }
-    .como-comprar div .destacado p {
-      font-family: 'Cormorant Garamond';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 2em;
-      color: #001613; }
-    .como-comprar div .destacado span {
-      font-family: 'Cormorant Garamond';
-      font-style: italic;
-      font-weight: 1000; }
-    .como-comprar div .destacado h2, .como-comprar div .destacado .h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 1em; }
-  .como-comprar h1, .como-comprar .h1 {
-    text-align: center; }
-  .como-comprar div img {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 5em;
-    margin-top: 1em; }
-  .como-comprar .pasos-comprar {
-    margin-top: 3px; }
-  .como-comprar .pasos {
-    background-color: #eaf3ee;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto; }
-
 @media screen and (max-width: 1080px) {
-  .texto-home figure img {
-    display: none; }
-  .preguntas-home {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: auto; }
-  .pasos {
-    padding: 2em;
-    margin: 1em;
-    border-radius: 5px; }
-  .preguntas-home {
+  .navbar {
     width: auto; } }
 
 /* Productos */
@@ -8028,21 +7938,22 @@ footer {
 
 @media screen and (max-width: 1080px) {
   .productos {
-    width: auto;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center; } }
+    flex-wrap: wrap;
+    width: auto; } }
 
 /* Destacados */
 @media screen and (max-width: 1080px) {
   .destacado {
-    font-size: 1em; } }
-
+    font-size: 0.8em;
+    margin: 0em 3em 3em 3em; } }
+    
 /* Destacados */
 @media screen and (max-width: 1080px) {
   .destacado {
-    font-size: 1em; } }
+    font-size: 0.8em;
+    margin: 0em 3em 3em 3em; } }
 
 footer {
   width: auto;
@@ -8065,6 +7976,7 @@ footer {
   width: 1000px;
   height: 650px;
   margin: auto;
+  margin-bottom: 5em;
   background-color: #eaf3ee;
   border-radius: 5px; }
   .faq ul {
@@ -8088,16 +8000,121 @@ footer {
   .faq {
     width: auto;
     height: auto;
-    margin: 1em; }
+    margin-left: 1em;
+    margin-right: 1em; }
     .faq ul {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      margin-right: 1.6em; }
+      width: auto;
+      padding: 0em 1.5em; }
       .faq ul div {
-        width: auto;
-        height: auto; }
+        width: auto; }
         .faq ul div li {
-          padding: 1em 0em 1em 0em; } }
+          padding-bottom: 1em; }
+  .sep-faq {
+    width: auto; } }
+
+/* Inicio */
+.preguntas-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.texto-home {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 2em; }
+  .texto-home span {
+    color: #6cc29e; }
+  .texto-home img {
+    height: 100%;
+    width: 100%; }
+
+.texto-piezas {
+  width: 600px; }
+
+.texto-piezas span {
+  width: 500px;
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-size: 2em;
+  font-weight: 800; }
+
+@media screen and (max-width: 1080px) {
+  body {
+    width: auto; }
+  .texto-home figure img {
+    display: none; }
+  .texto-home {
+    width: auto; }
+  .preguntas-home {
+    width: auto;
+    padding-left: 1.5em;
+    padding-right: 1.5em; }
+  .texto-piezas {
+    width: auto;
+    font-size: 1em; }
+    .texto-piezas span {
+      font-size: 1.7em; }
+    .texto-piezas p {
+      font-size: 1.5em; }
+  .carousel {
+    width: auto; }
+  footer div {
+    width: auto; }
+  .destacado {
+    margin-bottom: 0em; } }
+
+/*Como comprar*/
+.como-comprar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; }
+  .como-comprar h2, .como-comprar .h2 {
+    padding: 2em;
+    align-content: center; }
+  .como-comprar section {
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 4em;
+    border-radius: 5px;
+    background-color: #f6f8f7; }
+    .como-comprar section :first-child {
+      border-top: solid #6cc29e; }
+    .como-comprar section div {
+      padding: 2em 5em 1em 5em;
+      border-bottom: solid #6cc29e;
+      display: flex;
+      flex-direction: row; }
+      .como-comprar section div ul {
+        padding: 0em 5em 0em 7em; }
+      .como-comprar section div span {
+        border-style: hidden;
+        padding-right: 1em; }
+  .como-comprar .destacado {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 1em 7em 3em 7em;
+    text-align: center; }
+    .como-comprar .destacado p {
+      font-family: 'Cormorant Garamond';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 2em;
+      color: #001613; }
+    .como-comprar .destacado span {
+      font-family: 'Cormorant Garamond';
+      font-style: italic;
+      font-weight: 1000; }
+    .como-comprar .destacado h2, .como-comprar .destacado .h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1em; }
+  .como-comprar h1, .como-comprar .h1 {
+    text-align: center; }
+
+@media screen and (max-width: 1080px) {
+  .como-comprar section {
+    width: auto; }
+    .como-comprar section div {
+      width: auto; } }
