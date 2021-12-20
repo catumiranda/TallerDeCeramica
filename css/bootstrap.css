@@ -7974,6 +7974,7 @@ footer {
   width: 1000px;
   height: 650px;
   margin: auto;
+  margin-bottom: 5em;
   background-color: #eaf3ee;
   border-radius: 5px; }
   .faq ul {
