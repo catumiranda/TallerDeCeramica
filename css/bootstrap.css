@@ -7842,9 +7842,7 @@ a:active {
 /*Grid*/
 .grid {
   display: grid;
-  grid-template-areas: 'header'
- 'main'
- 'footer';
+  grid-template-areas: 'header' 'main' 'footer';
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto; }
 
@@ -7901,6 +7899,12 @@ footer {
 
 @media screen and (max-width: 1080px) {
   .navbar {
+    width: auto; }
+  .pasos {
+    padding: 2em;
+    margin: 1em;
+    border-radius: 5px; }
+  .preguntas-home {
     width: auto; } }
 
 /* Productos */
@@ -7948,7 +7952,7 @@ footer {
   .destacado {
     font-size: 0.8em;
     margin: 0em 3em 3em 3em; } }
-    
+
 /* Destacados */
 @media screen and (max-width: 1080px) {
   .destacado {
