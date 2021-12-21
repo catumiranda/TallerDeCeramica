@@ -7886,16 +7886,6 @@ footer {
 .offcanvas {
   background-color: #e6f0eb; }
 
-/*HTML El taller*/
-.taller {
-  display: flex;
-  flex-direction: column;
-  margin: auto; }
-
-.explicacion-taller {
-  width: 1000px;
-  align-content: center; }
-
 @media screen and (max-width: 1080px) {
   .navbar {
     width: auto; }
@@ -8150,3 +8140,30 @@ footer {
         padding: 1em; }
         .como-comprar section div ul {
           padding: 0em; } }
+
+.el-taller {
+  display: flex;
+  flex-direction: row;
+  margin: 3em 5em 3em 5em; }
+  .el-taller .carousel-taller {
+    width: 500px;
+    height: 500px; }
+  .el-taller .presentacion-taller {
+    width: 750px;
+    margin: auto;
+    padding-left: 3em; }
+
+@media screen and (max-width: 1080px) {
+  .el-taller {
+    display: flex;
+    flex-direction: column;
+    margin: 1em; }
+    .el-taller .carousel-taller {
+      width: auto;
+      height: auto; }
+    .el-taller .presentacion-taller {
+      width: auto;
+      padding-left: 0em;
+      margin-top: 2em; }
+      .el-taller .presentacion-taller .texto-taller {
+        margin: 1em 0.5em; } }

@@ -1,4 +1,45 @@
-.carousel-taller {
-    width: 500px;
-    height: 500px;
+.el-taller {
+
+    display: flex;
+    flex-direction: row;
+    margin: 3em 5em 3em 5em;
+
+    .carousel-taller {
+        width: 500px;
+        height: 500px;
+    }
+
+    .presentacion-taller {
+        width: 750px;
+        margin: auto;
+        padding-left: 3em;
+    }
+
 }
+
+@media screen and (max-width: 1080px){
+
+    .el-taller {
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+
+        .carousel-taller{
+            width: auto;
+            height: auto;
+        }
+
+        .presentacion-taller {
+            width: auto;
+            padding-left: 0em;
+            margin-top: 2em;
+
+            .texto-taller {
+                margin: 1em 0.5em;
+            }
+        }
+
+    }
+}
+
+
