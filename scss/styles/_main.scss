@@ -75,19 +75,6 @@ footer {
     background-color: #e6f0eb;
 }
 
-/*HTML El taller*/
-
-.taller {
-    display: flex;
-    flex-direction: column;
-    margin:auto;
-}
-
-.explicacion-taller {
-    width: 1000px;
-    align-content: center;
-}
-
 @media screen and (max-width: 1080px) {
     
     .navbar {
