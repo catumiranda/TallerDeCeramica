@@ -16,12 +16,15 @@ footer {
         justify-content: space-around;
         align-self: center;
         margin-top: 2em;
+
+        li {
+            display: inline-block;
+            color: darkcyan;
+        }
+       
         
     }
     
-     ul li {
-        display: inline-block;
-    }
-   
+     
 }
 

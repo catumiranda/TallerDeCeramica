@@ -7903,7 +7903,8 @@ footer {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: 3em; }
 
 .producto-individual {
   display: flex;
@@ -8004,32 +8005,27 @@ footer {
     justify-content: space-around;
     align-self: center;
     margin-top: 2em; }
-  footer ul li {
-    display: inline-block; }
+    footer ul li {
+      display: inline-block;
+      color: darkcyan; }
 
 .faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   width: 1000px;
-  height: 650px;
   margin: auto;
-  margin-bottom: 5em;
-  background-color: #eaf3ee;
-  border-radius: 5px; }
-  .faq ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center; }
-  .faq ul div {
-    padding: 2em 0em 2em 0em;
-    border-bottom: solid #055c4d 2px;
-    width: 900px; }
-  .faq ul div li {
-    padding: 1em 0em 1em 0em; }
-
-.sep-faq {
-  width: 800px;
-  color: #033838; }
+  margin-bottom: 5em; }
+  .faq div {
+    background-color: #eaf3ee;
+    border-radius: 5px;
+    margin: 2em 0em 0em 0em;
+    padding: 2em; }
+    .faq div p span {
+      font-weight: bold;
+      font-size: 1.4em;
+      color: #055c4d; }
 
 @media screen and (max-width: 1080px) {
   .faq {
@@ -8037,15 +8033,10 @@ footer {
     height: auto;
     margin-left: 1em;
     margin-right: 1em; }
-    .faq ul {
-      width: auto;
-      padding: 0em 1.5em; }
-      .faq ul div {
-        width: auto; }
-        .faq ul div li {
-          padding-bottom: 1em; }
-  .sep-faq {
-    width: auto; } }
+    .faq div {
+      width: auto; }
+      .faq div p span {
+        font-size: 1.2em; } }
 
 /* Inicio */
 .preguntas-home {
@@ -8108,12 +8099,12 @@ footer {
     padding: 2em;
     align-content: center; }
   .como-comprar section {
-    width: 1000px;
+    width: 900px;
     margin: auto;
     margin-bottom: 4em;
     border-radius: 5px;
     background-color: #f6f8f7; }
-    .como-comprar section :first-child {
+    .como-comprar section #primer-paso {
       border-top: solid #6cc29e; }
     .como-comprar section div {
       padding: 2em 5em 1em 5em;
@@ -8123,7 +8114,6 @@ footer {
       .como-comprar section div ul {
         padding: 0em 5em 0em 7em; }
       .como-comprar section div span {
-        border-style: hidden;
         padding-right: 1em; }
   .como-comprar h1, .como-comprar .h1 {
     text-align: center; }
