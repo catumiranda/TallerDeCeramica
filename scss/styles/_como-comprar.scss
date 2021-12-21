@@ -41,10 +41,6 @@
         
     }
 
-    .destacado {
-        @include destacado;
-    }
-
     h1 {
         text-align: center;
     }      
@@ -53,11 +49,22 @@
 
 @media screen and (max-width: 1080px) {
 
-    .como-comprar section {
+    .como-comprar {
         width: auto;
 
-        div {
+        section {
+            background-color:#f6f8f7;
             width: auto;
+            margin: 1.5em;
+    
+            div {
+                width: auto;
+                padding: 1em;
+                
+                ul {
+                    padding: 0em;
+                }
+            }
         }
     }
 

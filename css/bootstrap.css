@@ -7812,10 +7812,31 @@ textarea.form-control-lg {
 /*Estilos generales*/
 /*Import*/
 /* Destacados */
+.destacado {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 1em 7em 3em 7em;
+  text-align: center; }
+  .destacado p {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2em;
+    color: #001613; }
+  .destacado span {
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: 1000; }
+  .destacado h2, .destacado .h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em; }
+
 @media screen and (max-width: 1080px) {
   .destacado {
     font-size: 0.8em;
-    margin: 0em 3em 3em 3em; } }
+    margin: 0em 2em 2em 2em; } }
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -7864,28 +7885,6 @@ footer {
 
 .offcanvas {
   background-color: #e6f0eb; }
-
-/* Destacados */
-.destacado {
-  font-weight: bold;
-  font-size: 1.3em;
-  margin: 1em 7em 3em 7em;
-  text-align: center; }
-  .destacado p {
-    font-family: 'Cormorant Garamond';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2em;
-    color: #001613; }
-  .destacado span {
-    font-family: 'Cormorant Garamond';
-    font-style: italic;
-    font-weight: 1000; }
-  .destacado h2, .destacado .h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1em; }
 
 /*HTML El taller*/
 .taller {
@@ -7948,16 +7947,58 @@ footer {
     width: auto; } }
 
 /* Destacados */
+.destacado {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 1em 7em 3em 7em;
+  text-align: center; }
+  .destacado p {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2em;
+    color: #001613; }
+  .destacado span {
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: 1000; }
+  .destacado h2, .destacado .h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em; }
+
 @media screen and (max-width: 1080px) {
   .destacado {
     font-size: 0.8em;
-    margin: 0em 3em 3em 3em; } }
+    margin: 0em 2em 2em 2em; } }
 
 /* Destacados */
+.destacado {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 1em 7em 3em 7em;
+  text-align: center; }
+  .destacado p {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2em;
+    color: #001613; }
+  .destacado span {
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: 1000; }
+  .destacado h2, .destacado .h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em; }
+
 @media screen and (max-width: 1080px) {
   .destacado {
     font-size: 0.8em;
-    margin: 0em 3em 3em 3em; } }
+    margin: 0em 2em 2em 2em; } }
 
 footer {
   width: auto;
@@ -8094,31 +8135,18 @@ footer {
       .como-comprar section div span {
         border-style: hidden;
         padding-right: 1em; }
-  .como-comprar .destacado {
-    font-weight: bold;
-    font-size: 1.3em;
-    margin: 1em 7em 3em 7em;
-    text-align: center; }
-    .como-comprar .destacado p {
-      font-family: 'Cormorant Garamond';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 2em;
-      color: #001613; }
-    .como-comprar .destacado span {
-      font-family: 'Cormorant Garamond';
-      font-style: italic;
-      font-weight: 1000; }
-    .como-comprar .destacado h2, .como-comprar .destacado .h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 1em; }
   .como-comprar h1, .como-comprar .h1 {
     text-align: center; }
 
 @media screen and (max-width: 1080px) {
-  .como-comprar section {
+  .como-comprar {
     width: auto; }
-    .como-comprar section div {
-      width: auto; } }
+    .como-comprar section {
+      background-color: #f6f8f7;
+      width: auto;
+      margin: 1.5em; }
+      .como-comprar section div {
+        width: auto;
+        padding: 1em; }
+        .como-comprar section div ul {
+          padding: 0em; } }

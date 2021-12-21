@@ -30,12 +30,16 @@
     }
 }
 
+.destacado {
+    @include destacado;
+}
+
 @media screen and (max-width: 1080px) {
 
     .destacado {
 
         font-size: 0.8em;
-        margin: 0em 3em 3em 3em;
+        margin: 0em 2em 2em 2em;
     }
 }
 
