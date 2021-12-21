@@ -7888,12 +7888,6 @@ footer {
 
 @media screen and (max-width: 1080px) {
   .navbar {
-    width: auto; }
-  .pasos {
-    padding: 2em;
-    margin: 1em;
-    border-radius: 5px; }
-  .preguntas-home {
     width: auto; } }
 
 /* Productos */
